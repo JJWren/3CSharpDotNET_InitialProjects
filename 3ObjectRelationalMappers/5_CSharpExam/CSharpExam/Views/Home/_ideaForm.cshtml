@@ -1,0 +1,10 @@
+@model Idea
+
+<form class="d-flex flex-row justify-content-between text-center" action="IdeaForm" method="post">
+    <div class="form-group d-flex flex-row justify-content-between">
+        <textarea class="form-control col-10" asp-for="Comment" rows="3"
+placeholder="post something witty here..."></textarea>
+        <input type="submit" value="Add Idea!" class="btn btn-primary" />
+    </div>
+    <span asp-validation-for="Comment" class="text-danger"></span>
+</form>

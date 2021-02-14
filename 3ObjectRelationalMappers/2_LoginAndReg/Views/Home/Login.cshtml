@@ -1,0 +1,33 @@
+@model LUser
+
+@{
+    ViewData["Title"] = "Login!";
+}
+
+<div class="d-flex flex-column">
+    <div class="d-flex flex-row justify-content-between align-items-center pb-3 col-12 px-0">
+        <h2 class="col-10 mr-auto">Login to this Cool Site!</h2>
+        <a href="/" class="col-2 ml-auto"><u>Register</u></a>
+    </div>
+    <div class="d-flex flex-row justify-content-start">
+        <form asp-action="LoginUser" method="post" class="d-flex flex-row flex-wrap justify-content-start col-10 p-0">
+            <div class="col-5 d-flex flex-column align-items-start">
+                <div class="input-group p-2 d-flex flex-column">
+                    <label for="LEmail">Email</label>
+                    <input asp-for="LEmail" placeholder="john.doe@email.com">
+                    <span asp-validation-for="LEmail" class="text-danger"></span>
+                </div>
+                <div class="input-group p-2 d-flex flex-column">
+                    <label for="LPassword">Password</label>
+                    <input asp-for="LPassword" placeholder="Must be at least 8 chars">
+                    <span asp-validation-for="LPassword" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-5 d-flex flex-column align-items-start">
+            </div>
+            <div class="col-1"></div>
+            <input type="submit" value="Login" class="btn btn-primary shadow-lg mt-2 ml-4">
+        </form>
+    </div>
+</div>

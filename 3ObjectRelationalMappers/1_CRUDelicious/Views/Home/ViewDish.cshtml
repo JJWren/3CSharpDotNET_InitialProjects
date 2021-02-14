@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = @ViewBag.Name;
+}
+
+<div class="text-center d-flex flex-column justify-content-center">
+    <h1>@ViewBag.Name</h1>
+    <h4 class="pb-3 border-bottom">@ViewBag.Chef</h4>
+    <p>@ViewBag.Description</p>
+    <div class="text-left">
+        <p><b>Calories:</b> @ViewBag.Calories</p>
+        <p><b>Tastiness:</b> @ViewBag.Tastiness</p>
+    </div>
+    <div class="p-4 d-flex flex-row justify-content-around">
+        <div class="border border-danger shadow-lg rounded col-2 bg-danger">
+            <a href="/DeleteDish/@ViewBag.DishID" class="text-light">Delete</a>
+        </div>
+        <div class="border border-dark shadow-lg rounded col-2 bg-light">
+            <a href="/EditDish/@ViewBag.DishID" class="text-dark">Edit</a>
+        </div>
+    </div>
+</div>

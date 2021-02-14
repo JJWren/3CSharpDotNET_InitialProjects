@@ -1,0 +1,46 @@
+@{
+    ViewData["Title"] = "New Wedding";
+}
+@model Wedding
+
+<div class="d-flex flex-column">
+    <div class="d-flex flex-row justify-content-between text-center border-bottom border-secondary">
+        <h1 class="display-4">Plan Wedding</h1>
+        <div class="d-flex flex-column justify-content-center align-items-center text-center">
+            <a href="/Dashboard" class="btn btn-info">Dashboard</a>
+        </div>
+        <div class="d-flex flex-column justify-content-center align-items-center text-center">
+            <a href="/" class="btn btn-danger">Logout</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-5">
+            <form asp-action="AddWedding" method="post">
+                <div class="form-group pt-4">
+                    <label for="WedderOne">Wedder One</label>
+                    <input asp-for="WedderOne" class="form-control" />
+                    <span asp-validation-for="WedderOne" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="WedderTwo">Wedder Two</label>
+                    <input asp-for="WedderTwo" class="form-control" />
+                    <span asp-validation-for="WedderTwo" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="DateOfEvent">Date</label>
+                    <input asp-for="DateOfEvent" class="form-control" />
+                    <span asp-validation-for="DateOfEvent" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="Address">Address</label>
+                    <input asp-for="Address" class="form-control" />
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+                <input type="submit" value="Create" class="btn btn-primary mt-3">
+            </form>
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-5">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Event Page";
+}
+
+@model Wedding
+
+<div class="d-flex flex-column">
+    <div class="d-flex flex-row justify-content-between text-center border-bottom border-secondary">
+        <h1 class="">@Model.WedderOne & @Model.WedderTwo's Wedding</h1>
+        <div class="d-flex flex-column justify-content-center align-items-center text-center">
+            <a href="/Dashboard" class="btn btn-info">Dashboard</a>
+        </div>
+        <div class="d-flex flex-column justify-content-center align-items-center text-center">
+            <a href="/" class="btn btn-danger">Logout</a>
+        </div>
+    </div>
+    <div class="d-flex flex-row justify-content-center text-center">
+        <h3>Date: @Model.DateOfEvent</h3>
+    </div>
+    <div class="d-flex flex-row justify-content-center text-center">
+        <h3>Guests:</h3>
+    </div>
+    <div class="d-flex flex-column justify-content-center text-center">
+        @foreach(var g in Model.Events)
+        {
+            <p>@g.User.FirstName @g.User.LastName</p>
+        }
+    </div>
+</div>

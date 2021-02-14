@@ -1,0 +1,61 @@
+@{
+    ViewData["Title"] = "Welcome!";
+}
+
+@model List<Wedding>
+
+<div class="d-flex flex-column">
+    <div class="d-flex flex-row justify-content-between text-center border-bottom border-secondary">
+        <h1>Welcome @ViewBag.User.FirstName!</h1>
+        <div class="d-flex flex-column justify-content-center align-items-center text-center">
+            <a href="/" class="btn btn-danger">Logout</a>
+        </div>
+    </div>
+    <div>
+        <table class="table table-hover table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Wedding</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Guests</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Wedding w in Model)
+                {
+                    <tr>
+                        <td><a href="/EventPage/@w.WeddingID">@w.WedderOne & @w.WedderTwo</a></td>
+                        <td>@w.DateOfEvent</td>
+                        <td>@w.Events.Count</td>
+                        <td>
+                            @{
+                                if (w.UserID == ViewBag.User.UserId)
+                                {
+                                    <a href="/Delete">
+                                        Delete
+                                    </a>
+                                }
+                                else if (w.Events.Any(u => u.UserID == ViewBag.User.UserId))
+                                {
+                                    <a href="/UnRSVP/@w.WeddingID">
+                                        Un-RSVP
+                                    </a>
+                                }
+                                else
+                                {
+                                    <a href="/RSVP/@w.WeddingID">
+                                        RSVP
+                                    </a>
+                                }
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="d-flex flex-row-reverse justify-content-start text-center border-secondary">
+        <a href="/WeddingForm" class="btn btn-info">New Wedding</a>
+    </div>
+</div>

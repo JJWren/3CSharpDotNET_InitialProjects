@@ -1,0 +1,13 @@
+C:\Users\Josh_Wren\Documents\GitHub\CodingDojoAssignments\CSharp_stack\Human\bin\Debug\netcoreapp3.1\Human.exe
+C:\Users\Josh_Wren\Documents\GitHub\CodingDojoAssignments\CSharp_stack\Human\bin\Debug\netcoreapp3.1\Human.deps.json
+C:\Users\Josh_Wren\Documents\GitHub\CodingDojoAssignments\CSharp_stack\Human\bin\Debug\netcoreapp3.1\Human.runtimeconfig.json
+C:\Users\Josh_Wren\Documents\GitHub\CodingDojoAssignments\CSharp_stack\Human\bin\Debug\netcoreapp3.1\Human.runtimeconfig.dev.json
+C:\Users\Josh_Wren\Documents\GitHub\CodingDojoAssignments\CSharp_stack\Human\bin\Debug\netcoreapp3.1\Human.dll
+C:\Users\Josh_Wren\Documents\GitHub\CodingDojoAssignments\CSharp_stack\Human\bin\Debug\netcoreapp3.1\Human.pdb
+C:\Users\Josh_Wren\Documents\GitHub\CodingDojoAssignments\CSharp_stack\Human\obj\Debug\netcoreapp3.1\Human.csprojAssemblyReference.cache
+C:\Users\Josh_Wren\Documents\GitHub\CodingDojoAssignments\CSharp_stack\Human\obj\Debug\netcoreapp3.1\Human.AssemblyInfoInputs.cache
+C:\Users\Josh_Wren\Documents\GitHub\CodingDojoAssignments\CSharp_stack\Human\obj\Debug\netcoreapp3.1\Human.AssemblyInfo.cs
+C:\Users\Josh_Wren\Documents\GitHub\CodingDojoAssignments\CSharp_stack\Human\obj\Debug\netcoreapp3.1\Human.csproj.CoreCompileInputs.cache
+C:\Users\Josh_Wren\Documents\GitHub\CodingDojoAssignments\CSharp_stack\Human\obj\Debug\netcoreapp3.1\Human.dll
+C:\Users\Josh_Wren\Documents\GitHub\CodingDojoAssignments\CSharp_stack\Human\obj\Debug\netcoreapp3.1\Human.pdb
+C:\Users\Josh_Wren\Documents\GitHub\CodingDojoAssignments\CSharp_stack\Human\obj\Debug\netcoreapp3.1\Human.genruntimeconfig.cache

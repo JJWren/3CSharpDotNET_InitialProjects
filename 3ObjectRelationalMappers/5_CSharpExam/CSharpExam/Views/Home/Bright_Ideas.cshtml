@@ -1,0 +1,58 @@
+@{
+    ViewData["Title"] = "Welcome!";
+}
+
+<div class="d-flex flex-column">
+    <div class="d-flex flex-row justify-content-between text-center">
+        <h1>Hello @ViewBag.User.Alias!</h1>
+        <div class="d-flex flex-column justify-content-center align-items-center text-center">
+            <a href="/" class="btn btn-danger">Logout</a>
+        </div>
+    </div>
+    <div class="d-flex flex-row justify-content-between text-center">
+        <div class="col-10">
+            <partial name="_ideaForm" />
+        </div>
+    </div>
+    <div class="d-flex flex-column justify-content-start text-center">
+        @foreach (Idea i in ViewBag.Ideas)
+        {
+            <div class="d-flex flex-row justify-content-start text-center p-2 m-1">
+                <p class="m-1 p-1"><a href="UserInfo/@i.Creator.UserID" class="m-1 p-1">@i.Creator.Alias</a> says:</p>
+                <div class="d-flex flex-column justify-content-start text-center border border-info rounded p-2 m-1">
+                    <div class="d-flex flex-row justify-content-start text-center">
+                        <p class="border border-dark">@i.Comment</p>
+                    </div>
+                    <br>
+                    @{
+                        if (i.UserID == ViewBag.User.UserID)
+                        {
+                            <div class="d-flex flex-row justify-content-start text-center">
+                                <p><a href="/Delete/@i.IdeaID">Delete</a> | <a href="/PeopleWhoLiked/@i.IdeaID">@i.Likes.Count
+                                        people</a> like this.</p>
+                            </div>
+                        }
+                        else if (i.Likes.Any(u => u.UserID == ViewBag.User.UserID))
+                        {
+                            <div class="d-flex flex-row justify-content-start text-center">
+                                <p><a href="/Unlike/@i.IdeaID">Remove Like</a> | <a href="/PeopleWhoLiked/@i.IdeaID">@i.Likes.Count
+                                        people</a> like this.</p>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="d-flex flex-row justify-content-start text-center">
+                                <p><a href="/Like/@i.IdeaID">Like</a> | <a href="/PeopleWhoLiked/@i.IdeaID">@i.Likes.Count
+                                        people</a> like this.</p>
+                            </div>
+                        }
+                    }
+                    <div class="d-flex flex-row justify-content-start text-center">
+                        <a href="/PeopleWhoLiked/@i.IdeaID">@i.Likes.Count people </a>
+                        <p> like this.</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

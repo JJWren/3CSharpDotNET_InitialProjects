@@ -1,0 +1,13 @@
+C:\Users\Josh_Wren\Documents\GitHub\CodingDojoAssignments\CSharp_stack\FundamentalsI\bin\Debug\netcoreapp3.1\FundamentalsI.exe
+C:\Users\Josh_Wren\Documents\GitHub\CodingDojoAssignments\CSharp_stack\FundamentalsI\bin\Debug\netcoreapp3.1\FundamentalsI.deps.json
+C:\Users\Josh_Wren\Documents\GitHub\CodingDojoAssignments\CSharp_stack\FundamentalsI\bin\Debug\netcoreapp3.1\FundamentalsI.runtimeconfig.json
+C:\Users\Josh_Wren\Documents\GitHub\CodingDojoAssignments\CSharp_stack\FundamentalsI\bin\Debug\netcoreapp3.1\FundamentalsI.runtimeconfig.dev.json
+C:\Users\Josh_Wren\Documents\GitHub\CodingDojoAssignments\CSharp_stack\FundamentalsI\bin\Debug\netcoreapp3.1\FundamentalsI.dll
+C:\Users\Josh_Wren\Documents\GitHub\CodingDojoAssignments\CSharp_stack\FundamentalsI\bin\Debug\netcoreapp3.1\FundamentalsI.pdb
+C:\Users\Josh_Wren\Documents\GitHub\CodingDojoAssignments\CSharp_stack\FundamentalsI\obj\Debug\netcoreapp3.1\FundamentalsI.csprojAssemblyReference.cache
+C:\Users\Josh_Wren\Documents\GitHub\CodingDojoAssignments\CSharp_stack\FundamentalsI\obj\Debug\netcoreapp3.1\FundamentalsI.AssemblyInfoInputs.cache
+C:\Users\Josh_Wren\Documents\GitHub\CodingDojoAssignments\CSharp_stack\FundamentalsI\obj\Debug\netcoreapp3.1\FundamentalsI.AssemblyInfo.cs
+C:\Users\Josh_Wren\Documents\GitHub\CodingDojoAssignments\CSharp_stack\FundamentalsI\obj\Debug\netcoreapp3.1\FundamentalsI.csproj.CoreCompileInputs.cache
+C:\Users\Josh_Wren\Documents\GitHub\CodingDojoAssignments\CSharp_stack\FundamentalsI\obj\Debug\netcoreapp3.1\FundamentalsI.dll
+C:\Users\Josh_Wren\Documents\GitHub\CodingDojoAssignments\CSharp_stack\FundamentalsI\obj\Debug\netcoreapp3.1\FundamentalsI.pdb
+C:\Users\Josh_Wren\Documents\GitHub\CodingDojoAssignments\CSharp_stack\FundamentalsI\obj\Debug\netcoreapp3.1\FundamentalsI.genruntimeconfig.cache
