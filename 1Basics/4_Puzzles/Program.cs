@@ -102,7 +102,7 @@ namespace Puzzles
             }
         }
 
-        public static double TossMultipleCoins(int num)
+        public static double TossMultipleCoins(double num)
         {
             double hCount = 0, tCount = 0;
             for (double i = 0; i <= num; i++)
